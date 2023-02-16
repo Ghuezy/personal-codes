@@ -65,12 +65,8 @@ namespace NumberGuessingGame
             Console.WriteLine("Thanks for playing!");
             Console.WriteLine("Goodbye!");
             Console.WriteLine("-------------------------------");
+
+            Console.ReadKey();
         }
     }
 }
-
-    
-
-        
-
-        
