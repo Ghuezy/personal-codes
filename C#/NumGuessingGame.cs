@@ -46,6 +46,7 @@ namespace NumberGuessingGame
                 if (guess==number)
                 {
                     Console.WriteLine("You WON!");
+                    guesses++;
                 }
                 Console.WriteLine("Would you like to play again?(Y/N)");
                 response= Console.ReadLine();
