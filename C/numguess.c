@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <conio.h>
 #include <stdbool.h>
 #define min 0
 #define max 100
@@ -53,7 +52,9 @@ int main() {
 		}
 		
 	}
+    printf("Thanks for playing!\n");
+    printf("Goodbye!\n");
 	
-	getch();
+	
 	return 0;
 }
