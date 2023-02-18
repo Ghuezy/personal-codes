@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 
@@ -8,9 +8,9 @@ namespace NumberGuessingGame
     {
         static void Main(string[] args)
         {
-            int guesses=0, guess, number;
-            int min=0, max=100;
-            bool playAgain=true;
+            int guesses = 0, guess, number;
+            int min = 0, max = 100;
+            bool playAgain = true;
             String response;
             Random rand = new Random();
 
@@ -20,45 +20,45 @@ namespace NumberGuessingGame
 
             while (playAgain)
             {
-                number= rand.Next(min,max);                
+                number = rand.Next(min, max);
                 response = "";
 
                 Console.Write("Enter a number: ");
-                guess=Convert.ToInt32(Console.ReadLine());
+                guess = Convert.ToInt32(Console.ReadLine());
 
-                while (guess!=number)
+                while (guess != number)
                 {
-                    if (guess>number)
+                    if (guess > number)
                     {
                         Console.WriteLine(guess + " is too high!");
                         guesses++;
-                        Console.Write("Enter an another number: ");
+                        Console.Write("Enter an lower number: ");
                         guess = Convert.ToInt32(Console.ReadLine());
                     }
-                    else if(guess<number) 
+                    else if (guess < number)
                     {
                         Console.WriteLine(guess + " is too low!");
                         guesses++;
-                        Console.Write("Enter an another number: ");
+                        Console.Write("Enter an higher number: ");
                         guess = Convert.ToInt32(Console.ReadLine());
                     }
                 }
-                if (guess==number)
+                if (guess == number)
                 {
                     Console.WriteLine("You WON!");
                     guesses++;
                 }
                 Console.WriteLine("Would you like to play again?(Y/N)");
-                response= Console.ReadLine();
+                response = Console.ReadLine();
                 response = response.ToUpper();
 
-                if (response=="Y")
+                if (response == "Y")
                 {
                     playAgain = true;
                 }
                 else
                 {
-                    playAgain=false;
+                    playAgain = false;
                 }
             }
 
