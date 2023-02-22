@@ -59,7 +59,7 @@ namespace NumberGuessingGame
                 else
                 {
                     playAgain = false;
-               }
+                }
             }
 
             Console.WriteLine("You have tried " + guesses + " times.");
