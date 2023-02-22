@@ -9,6 +9,7 @@ namespace Calcutor
 		{
 			double num1, num2,result;
 			int opt;
+			
 			Console.Write("Enter the number 1 : ");
 			num1 = Convert.ToInt32(Console.ReadLine());
 
