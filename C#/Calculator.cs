@@ -31,26 +31,26 @@ namespace Calcutor
 				Console.WriteLine(num1 + " + " + num2 + " is : " + result);
 				break;
 
-                case 2:
-                    result = num1 - num2;
-                    Console.WriteLine(num1 + " - " + num2 + " is : " + result);
-                    break;
+                	case 2:
+                    		result = num1 - num2;
+                    		Console.WriteLine(num1 + " - " + num2 + " is : " + result);
+                    	break;
 
-                case 3:
-                    result = num1 * num2;
-                    Console.WriteLine(num1 + " * " + num2 + " is : " + result);
-                    break;
+                	case 3:
+                   		 result = num1 * num2;
+                   		 Console.WriteLine(num1 + " * " + num2 + " is : " + result);
+                  	break;
 
-                case 4:
-                    result = num1 / num2;
-                    Console.WriteLine(num1 + " / " + num2 + " is : " + result);
-                    break;
+               		case 4:
+                    		result = num1 / num2;
+                    		Console.WriteLine(num1 + " / " + num2 + " is : " + result);
+                    	break;
 
-				default: 
-					Console.WriteLine("You entered a wrong operator");
-					break;
+			default: 
+				Console.WriteLine("You entered a wrong operator");
+			break;
 					
-            }
+            		}
 
 			Console.ReadKey();
 		}
